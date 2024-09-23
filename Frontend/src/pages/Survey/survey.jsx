@@ -44,7 +44,7 @@ const ReplyBox = styled.button`
   justify-content: center;
   background-color: $ {({theme})=>
   theme === 'light' ? colors.backgroundLight : colors.backgroundDark};
-  color : ${({ theme }) => (theme === 'light' ? '#000000' : '#ffffff')};
+  color : ${({ theme }) => (theme === 'light' ? '#000000' : '#161515')};
   border-radius: 30px;
   cursor: pointer;
   box-shadow: ${(props) =>
