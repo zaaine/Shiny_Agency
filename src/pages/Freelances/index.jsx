@@ -1,3 +1,4 @@
+import React from 'react'
 import Card from '../../components/Card'
 import styled from 'styled-components'
 import colors from '../../styles/colors'
@@ -36,7 +37,7 @@ const LoaderWrapper = styled.div`
 function Freelances() {
   const { theme } = useTheme()
   const { data, isLoading, error } = useFetch(
-    `http://localhost:8000/freelances`
+    `http://localhost:8000/freelances`,
   )
 
   const freelancersList = data?.freelancersList
@@ -58,14 +59,14 @@ function Freelances() {
       ) : (
         <CardsContainer>
           {freelancersList.map((profile, index) => (
-            <Link key={`freelance-${profile.id}`} to={`/profile/${profile.id}`}> 
-            <Card
-              key={`${profile.name}-${index}`}
-              label={profile.job}
-              title={profile.name}
-              picture={profile.picture}
-              theme={theme}
-            />
+            <Link key={`freelance-${profile.id}`} to={`/profile/${profile.id}`}>
+              <Card
+                key={`${profile.name}-${index}`}
+                label={profile.job}
+                title={profile.name}
+                picture={profile.picture}
+                theme={theme}
+              />
             </Link>
           ))}
         </CardsContainer>

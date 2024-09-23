@@ -1,3 +1,4 @@
+import React from 'react'
 import { useContext } from 'react'
 import { SurveyContext } from '../../Utils/context'
 import { styled } from 'styled-components'
@@ -76,7 +77,7 @@ function Results() {
   const queryParams = formatQueryParams(answers)
 
   const { data, isLoading, error } = useFetch(
-    `http://localhost:8000/results?${queryParams}`
+    `http://localhost:8000/results?${queryParams}`,
   )
 
   if (error) {

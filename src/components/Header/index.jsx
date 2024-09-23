@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { StyledLink } from '../../styles/Attoms'
@@ -17,15 +18,20 @@ const NavContainer = styled.nav`
 `
 
 function Header() {
-  const {theme} = useTheme()
+  const { theme } = useTheme()
   return (
     <NavContainer>
       <Link to="/">
-        <HomeLogo src={theme === 'light'? DarkLogo : LightLogo} />
+        <HomeLogo src={theme === 'light' ? DarkLogo : LightLogo} />
       </Link>
       <div>
-        <StyledLink $theme={theme} to="/"> Accueil</StyledLink>
-        <StyledLink $theme={theme} to="/freelances">Profils</StyledLink>
+        <StyledLink $theme={theme} to="/">
+          {' '}
+          Accueil
+        </StyledLink>
+        <StyledLink $theme={theme} to="/freelances">
+          Profils
+        </StyledLink>
         <StyledLink to="/Survey/1" $isFullLink>
           Faire le test
         </StyledLink>

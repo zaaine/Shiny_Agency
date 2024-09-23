@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import { Component } from 'react'
 import colors from '../../styles/colors'

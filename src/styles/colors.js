@@ -1,3 +1,5 @@
+import React from 'react'
+
 const colors = {
   primary: '#5843E4',
   secondary: '#8186A0',

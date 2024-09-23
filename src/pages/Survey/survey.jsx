@@ -1,3 +1,4 @@
+import React from 'react'
 import { useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
@@ -13,13 +14,11 @@ const SurveyContainer = styled.div`
   align-items: center;
 `
 
-
-
 const QuestionTitle = styled.h2`
   text-decoration: underline;
   text-decoration-color: ${colors.primary};
   color: ${({ theme }) => (theme === 'light' ? '#000000' : '#ffffff')};
-  `
+`
 
 const QuestionContent = styled.span`
   margin: 30px;

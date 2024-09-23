@@ -1,3 +1,4 @@
+import React from 'react'
 import { useTheme } from '../../Utils/hooks/index'
 import styled from 'styled-components'
 import colors from '../../styles/colors'
@@ -9,7 +10,7 @@ const FooterContainer = styled.footer`
   align-items: center;
   justify-content: center;
   padding-top: 60px;
-  gap:60px;
+  gap: 60px;
 `
 
 const NightModeButton = styled.button`

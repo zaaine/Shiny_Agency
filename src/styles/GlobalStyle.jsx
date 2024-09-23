@@ -1,7 +1,6 @@
-
+import React from 'react'
 import { useTheme } from '../Utils/hooks/index'
 import { createGlobalStyle } from 'styled-components'
-
 
 const StyledGlobalStyle = createGlobalStyle`
     * {
