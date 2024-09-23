@@ -93,6 +93,6 @@ Clonez ce dépôt sur votre machine locale :
 git clone https://github.com/votre-utilisateur/agence-recrutement-freelance.git
 cd agence-recrutement-freelance
 
-![photo du site](/Frontend/src/assets/ShinyAgency_screen.png)
-
 ```
+
+![photo du site](/Frontend/src/assets/ShinyAgency_screen.png)
