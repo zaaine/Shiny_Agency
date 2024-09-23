@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+![photo du site](/Frontend/src/assets//dark-logo.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Agence de Recrutement Freelance
 
-## Available Scripts
+## Table des Matières
 
-In the project directory, you can run:
+- [Description](#description)
+- [Fonctionnalités](#fonctionnalités)
+- [Technologies Utilisées](#technologies-utilisées)
+- [Installation](#installation)
+  - [Prérequis](#prérequis)
+  - [Cloner le Dépôt](#cloner-le-dépôt)
+  - [Installation des Dépendances](#installation-des-dépendances)
+  - [Configuration de l'API Locale](#configuration-de-lapi-locale)
+  - [Lancer l'Application](#lancer-lapplication)
+- [Utilisation](#utilisation)
+- [Contribuer](#contribuer)
+- [Licence](#licence)
+- [Contact](#contact)
+- [Remerciements](#remerciements)
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Bienvenue sur le dépôt de **Agence de Recrutement Freelance** ! Ce projet vise à créer un site web performant pour une agence spécialisée dans le recrutement de freelances. Le site permet aux entreprises de trouver les talents dont elles ont besoin et aux freelances de présenter leurs compétences et de trouver des missions adaptées.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Le projet est divisé en deux parties principales :
 
-### `npm test`
+1. **API Locale** : Fournit les endpoints nécessaires pour gérer les données des utilisateurs, des offres de missions, etc.
+2. **Frontend React** : Interface utilisateur développée avec React, utilisant JSX et Styled Components pour le style.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Fonctionnalités
 
-### `npm run build`
+- **Inscription et Authentification** :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - Inscription des entreprises et des freelances.
+  - Connexion sécurisée avec gestion des sessions.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Gestion des Profils** :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - Création et modification des profils utilisateurs.
+  - Téléchargement de portfolios pour les freelances.
 
-### `npm run eject`
+- **Recherche et Filtrage** :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  - Recherche avancée de freelances par compétences, expérience, etc.
+  - Filtrage des missions par catégorie, durée, budget, etc.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Publication et Gestion des Missions** :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  - Les entreprises peuvent publier des offres de missions.
+  - Les freelances peuvent postuler aux missions disponibles.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Questionnaire Clients** :
 
-## Learn More
+  - Communication directe entre entreprises et freelances.
+  - Traitement du questionnaire et propositions adaptées aux réponses.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Responsive Design** :
+  - Interface adaptée aux différents types d'appareils (mobiles, tablettes, ordinateurs).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Utilisées
 
-### Code Splitting
+### Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React** : Bibliothèque JavaScript pour construire l'interface utilisateur.
+- **JSX** : Syntaxe XML utilisée par React.
+- **Styled Components** : Bibliothèque CSS-in-JS pour le styling des composants.
+- **Axios** : Client HTTP pour les requêtes vers l'API.
+- **React Router** : Gestion des routes dans l'application.
 
-### Analyzing the Bundle Size
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Node.js** : Environnement d'exécution JavaScript côté serveur.
+- **Express.js** : Framework web pour Node.js.
+- **MongoDB** : Base de données NoSQL pour stocker les données.
+- **JWT** : JSON Web Tokens pour l'authentification sécurisée.
 
-### Making a Progressive Web App
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Prérequis
 
-### Advanced Configuration
+Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur votre machine :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Node.js** (v14 ou supérieur) : [Télécharger Node.js](https://nodejs.org/)
+- **npm** ou **yarn** : Gestionnaire de paquets Node.js.
+- **MongoDB** : [Télécharger MongoDB](https://www.mongodb.com/)
 
-### Deployment
+### Cloner le Dépôt
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Clonez ce dépôt sur votre machine locale :
 
-### `npm run build` fails to minify
+```bash
+git clone https://github.com/votre-utilisateur/agence-recrutement-freelance.git
+cd agence-recrutement-freelance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![photo du site](/Frontend/src/assets/ShinyAgency_screen.png)
+
+```
