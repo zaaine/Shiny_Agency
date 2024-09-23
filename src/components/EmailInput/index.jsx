@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Component } from 'react'
 import colors from '../../styles/colors'
@@ -47,6 +48,10 @@ class EmailInput extends Component {
       </InputWrapper>
     )
   }
+}
+
+EmailInput.propTypes = {
+  theme: PropTypes.string.isRequired,
 }
 
 export default EmailInput

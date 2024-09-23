@@ -1,7 +1,6 @@
 import React from 'react'
 import Card from '../../components/Card'
 import styled from 'styled-components'
-import colors from '../../styles/colors'
 import { useFetch, useTheme } from '../../Utils/hooks'
 import { Loader } from '../../styles/Attoms'
 import { Link } from 'react-router-dom'

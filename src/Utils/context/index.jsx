@@ -1,4 +1,5 @@
 import React, { useState, createContext } from 'react'
+import PropTypes from 'prop-types'
 
 export const ThemeContext = createContext()
 
@@ -15,6 +16,10 @@ export const ThemeProvider = ({ children }) => {
   )
 }
 
+ThemeProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
 export const SurveyContext = createContext()
 
 export const SurveyProvider = ({ children }) => {
@@ -28,4 +33,8 @@ export const SurveyProvider = ({ children }) => {
       {children}
     </SurveyContext.Provider>
   )
+}
+
+SurveyProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 }

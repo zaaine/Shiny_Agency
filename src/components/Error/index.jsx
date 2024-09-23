@@ -34,7 +34,7 @@ function Error() {
       <ErrorTitle theme={theme}> Oups... </ErrorTitle>
       <Illustration src={ErrorIllustration} />
       <ErrorSubtitle theme={theme}>
-        Il sembleraient que la page que vous cherchez n'existe pas
+        Il sembleraient que la page que vous cherchez n&apos;existe pas
       </ErrorSubtitle>
     </ErrorWrapper>
   )
